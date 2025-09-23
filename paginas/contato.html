@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Contate Nós</title>
+    
+    <link rel="stylesheet" href="../estilos/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" ... >
+
+    <link rel="icon" type="image/png" href="../imagens/logo.jpg">
+
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Artesanato a Distância</a> 
+            <ul>  
+                <li><a href="../index.html">Início</a></li> 
+                <li><a href="produtos.html">Produtos</a></li> 
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="oficinas.html">Oficinas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pagina-cabecalho">
+            <div class="container">
+                <h1>Fale Connosco</h1>
+                <p>Tem alguma dúvida, sugestão ou quer fazer uma encomenda especial? Adoraríamos falar consigo!</p>
+            </div>
+        </div>
+
+        <section class="secao-conteudo">
+            <div class="container">
+                <div class="conteudo-flex reverso" style="align-items: flex-start; margin-bottom: 4rem;">
+                    <div class="imagem">
+                        <figure>
+                            <img src="../imagens/fachada.jpg">
+                            <figcaption>A nossa loja de portas abertas para si.</figcaption>
+                        </figure>
+                        <figure style="margin-top: 2rem;">
+                            <img src="../imagens/mapa.jpg" alt="Mapa com a localização da loja.">
+                            <figcaption>Venha visitar-nos pessoalmente.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="texto">
+                        <h2>Estamos Aqui para Ajudar</h2>
+                        <p>A sua opinião é muito importante para nós. Seja para saber mais sobre um produto, inscrever-se numa oficina ou simplesmente para partilhar as suas ideias, a nossa equipa está sempre disponível para o ouvir. Acreditamos que a comunicação é a chave para uma comunidade forte.</p>
+                        <p>Pode usar o formulário ao lado para nos enviar uma mensagem detalhada. Tentamos responder a todos os contactos num prazo de 48 horas úteis. Quanto mais detalhes nos fornecer, melhor e mais rapidamente conseguiremos ajudar com a sua questão.</p>
+                        <p>Se o seu contacto for sobre uma encomenda personalizada, por favor, seja o mais específico possível quanto a materiais, dimensões e cores. Pode até anexar uma imagem de referência para nos ajudar a visualizar a sua ideia. Estamos ansiosos por criar algo único consigo!</p>
+                        <p>Para assuntos urgentes ou se preferir um contacto mais direto, pode sempre ligar-nos ou visitar o nosso espaço físico durante o horário de funcionamento. Será um prazer recebê-lo e mostrar-lhe o nosso mundo de perto. O café é por nossa conta!</p>
+
+                        <div class="media-container" style="margin-top: 2rem; text-align: left;">
+                            <h3>Faça uma Visita Virtual</h3>
+                            <video controls loop muted style="border: none; max-width: 100%;">
+                                <source src="../mideas/oficina.mp4" type="video/mp4">
+                                O seu navegador não suporta a tag de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="#" method="post" class="formulario-contato">
+                    
+                    <fieldset>
+                        <legend>1. Dados Pessoais</legend>
+                        <div class="campo"><label for="nome">Nome Próprio:</label><input type="text" id="nome" name="nome" required></div>
+                        <div class="campo"><label for="apelido">Apelido:</label><input type="text" id="apelido" name="apelido" required></div>
+                        <div class="campo"><label for="email">E-mail:</label><input type="email" id="email" name="email" required></div>
+                        <div class="campo"><label for="telefone">Telefone:</label><input type="tel" id="telefone" name="telefone"></div>
+                        <div class="campo"><label for="nascimento">Data de Nascimento:</label><input type="date" id="nascimento" name="nascimento"></div>
+                        <div class="campo"><label for="morada">Morada:</label><input type="text" id="morada" name="morada"></div>
+                        <div class="campo"><label for="codigo_postal">Código Postal:</label><input type="text" id="codigo_postal" name="codigo_postal" placeholder="1234-567"></div>
+                        <div class="campo"><label for="cidade">Cidade:</label><input type="text" id="cidade" name="cidade"></div>
+                        <div class="campo"><label for="senha">Crie uma Senha (opcional):</label><input type="password" id="senha" name="senha"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>2. Motivo do Contacto</legend>
+                        <div class="campo"><label>Assunto Principal:</label><div class="grupo-opcoes"><input type="radio" id="duvida" name="assunto" value="duvida" checked> <label for="duvida">Dúvida</label><input type="radio" id="encomenda" name="assunto" value="encomenda"> <label for="encomenda">Encomenda</label><input type="radio" id="oficina" name="assunto" value="oficina"> <label for="oficina">Oficina</label></div></div>
+                        <div class="campo"><label for="oficina-select">Se for sobre oficinas, qual delas?</label><select id="oficina-select" name="oficina_select"><option value="">-- Selecione uma opção --</option><option value="ceramica">Cerâmica</option><option value="bordado">Bordado</option><option value="macrame">Macramé</option><option value="velas">Velas Artesanais</option></select></div>
+                        <div class="campo"><label for="quantidade">Quantidade (se aplicável):</label><input type="number" id="quantidade" name="quantidade" min="1" max="50"></div>
+                        <div class="campo"><label for="orcamento">Orçamento Pretendido (&):</label><input type="range" id="orcamento" name="orcamento" min="10" max="500" value="100"></div>
+                        <div class="campo"><label for="cor">Cor Principal Desejada:</label><input type="color" id="cor" name="cor" value="#c08261"></div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>3. A Sua Mensagem</legend>
+                        <div class="campo"><label for="mensagem">Mensagem:</label><textarea id="mensagem" name="mensagem" rows="5" required></textarea></div>
+                        <div class="campo"><label for="referencia">Anexar imagem de referência:</label><input type="file" id="referencia" name="referencia"></div>
+                        <div class="campo"><label for="website">O seu Website ou Portfólio:</label><input type="url" id="website" name="website" placeholder="https://exemplo.com"></div>
+                        <div class="campo"><label for="conheceu">Como nos conheceu?</label><select id="conheceu" name="conheceu"><option value="redes_sociais">Redes Sociais</option><option value="amigos">Recomendação</option><option value="pesquisa">Pesquisa Google</option><option value="loja_fisica">Visitei a loja</option></select></div>
+                        <div class="campo"><label>Quais os seus interesses?</label><div class="grupo-opcoes"><input type="checkbox" id="int_decoracao" name="interesse_decoracao"> <label for="int_decoracao">Decoração</label><input type="checkbox" id="int_moda" name="interesse_moda"> <label for="int_moda">Moda</label><input type="checkbox" id="int_oficinas" name="interesse_oficinas"> <label for="int_oficinas">Oficinas</label></div></div>
+                        <div class="campo"><div class="grupo-opcoes"><input type="checkbox" id="newsletter" name="newsletter"><label for="newsletter">Desejo receber a newsletter.</label></div></div>
+                        <div class="campo"><div class="grupo-opcoes"><input type="checkbox" id="termos" name="termos" required><label for="termos">Li e aceito os termos e condições.</label></div></div>
+                    </fieldset>
+
+                    <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Sobre a Artesanato a Distância</h4>
+                    <p>Criamos peças artesanais que contam histórias. Feitas com materiais sustentáveis e muito carinho para o seu lar.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="paginas/produtos.html">Produtos</a></li>
+                        <li><a href="paginas/sobre.html">Sobre Nós</a></li>
+                        <li><a href="paginas/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Artesanato a Distância. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

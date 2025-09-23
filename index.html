@@ -1,28 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>Título da sua Página</title>
+    <title>Artesanato a Distância</title>
     
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="icon" type="image/png" href="imagens/logo.jpg">
+
 
 </head>
 <body>
 
     <header>
-        
+        <nav>
+            <a href="index.html" class="logo">Artesanato a Distância</a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paginas/produtos.html">Produtos</a></li>
+                <li><a href="paginas/sobre.html">Sobre Nós</a></li>
+                <li><a href="paginas/oficinas.html">Oficinas</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        
+        <section class="banner">
+            <div class="banner-texto">
+                <h1>Onde cada peça conta uma história</h1>
+                <p>Conheça nossos produtos artesanais, feitos com carinho e exclusividade para você.</p>
+            </div>
+        </section>
+                <section class="secao-destaques">
+            <div class="container">
+                <h2>Feito à Mão, com Alma e Coração</h2>
+
+                <div class="conteudo-flex">
+                    <div class="texto">
+                        <p>Bem-vindo à Artesanato a Distância, um espaço onde cada objeto é criado com tempo, dedicação e uma história para contar. Acreditamos que o verdadeiro valor não está na produção em massa, mas na singularidade de cada peça que passa pelas mãos de nossos artesãos.</p>
+                        <p>Nossa jornada começou com um simples sonho: resgatar técnicas tradicionais e trazê-las para o mundo moderno. Usamos materiais de origem sustentável e colocamos um pedaço da nossa alma em cada textura, cor e forma que você vê aqui.</p>
+                    </div>
+                    <div class="imagem">
+                        <figure>
+                            <img src="imagens/trabalhando.jpg" >
+                            <figcaption>Nossa oficina, onde a magia acontece.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                
+                <div class="conteudo-flex reverso">
+                    <div class="imagem">
+                        <figure>
+                            <img src="imagens/produtos.jpg" >
+                            <figcaption>Peças exclusivas esperando por um novo lar.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="texto">
+                        <p>Convidamos você a explorar nossas coleções. De cerâmicas que aquecem o coração a têxteis que abraçam, cada item é um convite para desacelerar e apreciar a beleza das coisas simples, feitas para durar e encantar por gerações.</p>
+                        <p>Mais do que uma loja, somos uma comunidade de amantes do artesanato. Participe de nossas oficinas, conheça os artistas por trás das obras e faça parte deste movimento que valoriza o consumo consciente e o toque humano.</p>
+                    </div>
+                </div>
+
+                
+                <div class="media-container">
+                    <h3>Assista ao nosso processo criativo</h3>
+                    <video controls width="800">
+                        
+                        <source src="mideas/processo criativo.mp4" >
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Sobre a Artesanato a Distância</h4>
+                    <p>Criamos peças artesanais que contam histórias. Feitas com materiais sustentáveis e muito carinho para o seu lar.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="paginas/produtos.html">Produtos</a></li>
+                        <li><a href="paginas/sobre.html">Sobre Nós</a></li>
+                        <li><a href="paginas/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Artesanato a Distância. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
